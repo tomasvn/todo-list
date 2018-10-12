@@ -4,6 +4,7 @@
 
 Created a todo list app, utilizing DOM manipulations, listening for events
 
-## TODO
+
+## WIP
 
 * [ ] Add basic styling
