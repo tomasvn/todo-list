@@ -39,7 +39,7 @@ var add = function () {
   listItem.classList.add('elem')
   listItem.setAttribute('draggable', 'true')
 
-  list.appendChild(newElem) // Specify where do I want to append (inject) new element to, in "()" specify what child I want to inject
+  list.appendChild(listItem) // Specify where do I want to append (inject) new element to, in "()" specify what child I want to inject
   listItem.appendChild(btnElem)
 
   btnElem.addEventListener('click', function () {
