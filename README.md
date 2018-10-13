@@ -7,6 +7,7 @@ Created a todo list app, utilizing DOM manipulations, listening for events
 * [ ] Add basic styling
 * [ ] Set up linting
 * [ ] Set up git hooks (husky)
+* [ ] Gulp for static files handling
 
 ## Features
 * [ ] Drag and drop, sort todos
@@ -15,3 +16,4 @@ Created a todo list app, utilizing DOM manipulations, listening for events
 * Learn about DOM manipulation
 * Learn about events
 * Learn about input handling, getting values
+* Learn about deployment
