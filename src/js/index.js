@@ -19,9 +19,9 @@ var keyFn = function (ev) {
 }
 
 var add = function () {
-  var newElem = document.createElement('li') // We need to pass parameter, what kind of element we want to create
   var list = document.querySelector('.jsList')
   var inputValue = document.querySelector('.jsInput').value
+  var listItem = document.createElement('li') // We need to pass parameter, what kind of element we want to create
   var btnElem = document.createElement('button')
   var dragFn = {
     'start': function () {
@@ -35,19 +35,19 @@ var add = function () {
   btnElem.textContent = 'Delete Me!'
   btnElem.classList.add('btn')
   btnElem.classList.add('jsRemove')
-  newElem.textContent = inputValue // Insert text
-  newElem.classList.add('elem')
-  newElem.setAttribute('draggable', 'true')
+  listItem.textContent = inputValue // Insert text
+  listItem.classList.add('elem')
+  listItem.setAttribute('draggable', 'true')
 
   list.appendChild(newElem) // Specify where do I want to append (inject) new element to, in "()" specify what child I want to inject
-  newElem.appendChild(btnElem)
+  listItem.appendChild(btnElem)
 
   btnElem.addEventListener('click', function () {
-    newElem.parentNode.removeChild(newElem)
+    listItem.parentNode.removeChild(listItem)
   })
 
-  newElem.addEventListener('dragstart', dragFn.start)
-  newElem.addEventListener('dragend', dragFn.stop)
+  listItem.addEventListener('dragstart', dragFn.start)
+  listItem.addEventListener('dragend', dragFn.stop)
 }
 
 btnAdd.addEventListener('click', add)
