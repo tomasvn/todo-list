@@ -5,8 +5,15 @@ var keyFn = function (ev) {
 
     var key = ev.key || ev.keyCode
 
-    if (key === 'Enter' || key === 13) { // 13 Enter Key code
-      add()
+    if(input.value !== '') { // Check state, if value is not empty string
+
+      if (key === 'Enter' || key === 13) { // 13 Enter Key code
+        add()
+      }
+
+    } else {
+
+      alert('You have empty input!')
     }
 }
 
