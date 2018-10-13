@@ -15,10 +15,7 @@ var keyFn = function (ev) {
 
     } else {
 
-      alert('You have empty input!')
-
       btnAdd.setAttribute('disabled', '')
-      input.blur() // Remove keyboard focus state
     }
 }
 
