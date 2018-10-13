@@ -7,6 +7,7 @@ var keyFn = function (ev) {
     var key = ev.key || ev.keyCode
 
     if(input.value !== '') { // Check state, if value is not empty string
+      btnAdd.removeAttribute('disabled')
 
       if (key === 'Enter' || key === 13) { // 13 Enter Key code
         add()
@@ -15,6 +16,9 @@ var keyFn = function (ev) {
     } else {
 
       alert('You have empty input!')
+
+      btnAdd.setAttribute('disabled', '')
+      input.blur() // Remove keyboard focus state
     }
 }
 
