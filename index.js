@@ -1,14 +1,14 @@
-/*document.addEventListener('keyup', keyFn)
+var input  = document.querySelector('.jsInput')
 
 var keyFn = function (ev) {
     if (ev.preventDefault()) return false
 
     var key = ev.key || ev.keyCode
 
-    if (key === 'Enter' || key === 13) {
-
+    if (key === 'Enter' || key === 13) { // 13 Enter Key code
+      add()
     }
-}*/
+}
 
 var btnAdd = document.querySelector('.jsAdd')
 var btnRemove = document.querySelector('.jsRemove')
@@ -29,8 +29,9 @@ var add = function () {
     newElem.appendChild(btnElem)
 
     btnElem.addEventListener('click', function () {
-        newElem.parentNode.removeChild(newElem)
+      newElem.parentNode.removeChild(newElem)
     })
 }
 
 btnAdd.addEventListener('click', add)
+input.addEventListener('keyup', keyFn)
