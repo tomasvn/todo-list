@@ -14,6 +14,6 @@ body {
 }
 
 [draggable] {
-  user-select: none;
+  user-select: none; /* Prevent Text Selection when grabing and dropping */
   cursor: grab;
 }
