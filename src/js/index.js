@@ -23,7 +23,8 @@ var add = function () {
   var list = document.querySelector('.jsList')
   var inputValue = document.querySelector('.jsInput').value
   var listItem = document.createElement('li') // We need to pass parameter, what kind of element we want to create
-  var btnElem = document.createElement('button')
+  var btnEl = document.createElement('button')
+  var iconEl = document.createElement('i')
   var dragFn = {
     'start': function () {
       console.log('Drag Start')
@@ -39,17 +40,23 @@ var add = function () {
     }
   }
 
-  btnElem.textContent = 'Delete Me!'
-  btnElem.classList.add('btn')
-  btnElem.classList.add('jsRemove')
+  //btnElem.textContent = 'Delete Me!'
+  btnEl.classList.add('btn-delete')
+  btnEl.classList.add('jsRemove')
+  btnEl.setAttribute('title', 'Delete')
+
+  iconEl.classList.add('ion')
+  iconEl.classList.add('ion-ios-close')
+
   listItem.textContent = inputValue // Insert text
-  listItem.classList.add('elem')
+  listItem.classList.add('todo-app__list--item')
   listItem.setAttribute('draggable', 'true')
 
   list.appendChild(listItem) // Specify where do I want to append (inject) new element to, in "()" specify what child I want to inject
-  listItem.appendChild(btnElem)
+  listItem.appendChild(btnEl)
+  btnEl.appendChild(iconEl)
 
-  btnElem.addEventListener('click', function () {
+  btnEl.addEventListener('click', function () {
     listItem.parentNode.removeChild(listItem)
   })
 

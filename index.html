@@ -5,13 +5,22 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="author" content="Ngoc Tu Nguyen">
       <link rel="stylesheet" href="src/css/style.css">
+      <link href="https://unpkg.com/ionicons@4.4.4/dist/css/ionicons.min.css" rel="stylesheet">
     </head>
     <body>
-      <div>
-        <input type="text" value="" class="jsInput">
-        <button class="jsAdd" disabled>Add Me!</button>
+      <div class="todo-app">
+        <div class="todo-app__header">
+          <img src="" alt="">
+        </div>
+
+        <div class="todo-app__wrap">
+          <input type="text" value="" class="jsInput input">
+          <button class="jsAdd btn" disabled>Add Task</button>
+        </div>
+
+        <ul class="jsList todo-app__list"></ul>
       </div>
-      <ul class="jsList"></ul>
+
       <script src="src/js/index.js"></script>
     </body>
 </html>
