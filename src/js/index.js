@@ -33,7 +33,7 @@ var add = function () {
     },
     'leave': function () {
       console.log('Drag Leave')
-    }
+    },
     'stop': function () {
       console.log('Drag End')
     }
