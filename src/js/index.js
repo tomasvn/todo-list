@@ -9,7 +9,7 @@ var keyFn = function (ev) {
     if(input.value !== '') { // Check state, if value is not empty string
       btnAdd.removeAttribute('disabled')
 
-      if (key === 'Enter' || key === 13) { // 13 Enter Key code
+      if (key === 'Enter' || key === 13) {
         add()
       }
 
