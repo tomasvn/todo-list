@@ -46,6 +46,7 @@ button {
 
 .btn[disabled] {
   opacity: .5;
+  cursor: default;
 }
 
 .input {
