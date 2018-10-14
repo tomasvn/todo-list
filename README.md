@@ -1,6 +1,6 @@
 # Todo List
 
-Created a todo list app, utilizing DOM manipulations, listening for events
+Created a todo list app, utilizing DOM manipulations, listening for events, creating element etc.
 
 ## Plans
 
