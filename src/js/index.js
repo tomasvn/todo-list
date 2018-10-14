@@ -28,6 +28,12 @@ var add = function () {
     'start': function () {
       console.log('Drag Start')
     },
+    'enter': function () {
+      console.log('Drag Enter')
+    },
+    'leave': function () {
+      console.log('Drag Leave')
+    }
     'stop': function () {
       console.log('Drag End')
     }
