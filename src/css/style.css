@@ -41,6 +41,7 @@ button {
   padding: 12px 14px;
   color: #fff;
   transition: opacity 300ms ease-in;
+  cursor: pointer;
 }
 
 .btn[disabled] {
@@ -62,6 +63,8 @@ button {
 
 .todo-app {
   height: auto;
+  padding: 10px;
+  box-shadow: 1px 2px 20px 1px rgba(0,0,0,.3);
 }
 
 .todo-app__wrap {
