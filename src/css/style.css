@@ -92,6 +92,7 @@ button {
 .todo-app__list {
   overflow-y: auto;
   height: 200px;
+  margin-top: 10px;
 }
 
 .todo-app__list--item {
