@@ -1,10 +1,10 @@
 # Todo List
 
-Created a todo list app, utilizing DOM manipulations, listening for events
+Created a todo list app, utilizing DOM manipulations, listening for events, creating element etc.
 
 ## Plans
 
-* [ ] Add basic styling
+* [x] Add basic styling
 * [ ] Set up linting
 * [ ] Set up git hooks (husky)
 * [ ] Gulp for static files handling
