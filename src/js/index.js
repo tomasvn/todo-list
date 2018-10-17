@@ -1,5 +1,13 @@
+/**
+ * 1. Import node creates a copy of <Node> or <DocumentFragment> from another document,
+ *    to be inserted into current document later, use children to return HTML Collection
+ *    we want to get hold of the item (<li>) on the 0 index
+*/
+
 var input  = document.querySelector('.jsInput')
 var btnAdd = document.querySelector('.jsAdd')
+var template = document.querySelector('#list-template')
+var listTemplate = document.importNode(template.content, true).children[0] /* [1.] */
 
 var keyFn = function (ev) {
     if (ev.preventDefault()) return false
@@ -20,11 +28,14 @@ var keyFn = function (ev) {
 }
 
 var add = function () {
-  var list = document.querySelector('.jsList')
   var inputValue = document.querySelector('.jsInput').value
-  var listItem = document.createElement('li') // We need to pass parameter, what kind of element we want to create
+  var list = document.querySelector('.jsList')
+  var btnRemove = listTemplate.querySelector('.jsRemove')
+  console.log(listTemplate.querySelector('.todo-app__list--item'))
+  listTemplate.querySelector('.text').textContent = inputValue
+  /*var listItem = document.createElement('li') // We need to pass parameter, what kind of element we want to create
   var btnEl = document.createElement('button')
-  var iconEl = document.createElement('i')
+  var iconEl = document.createElement('i')*/
   var dragFn = {
     'start': function () {
       console.log('Drag Start')
@@ -40,7 +51,11 @@ var add = function () {
     }
   }
 
-  //btnElem.textContent = 'Delete Me!'
+  var remove = function () {
+    listItem.remove()
+  }
+
+  /*btnElem.textContent = 'Delete Me!'
   btnEl.classList.add('btn-delete')
   btnEl.classList.add('jsRemove')
   btnEl.setAttribute('title', 'Delete')
@@ -58,10 +73,13 @@ var add = function () {
 
   btnEl.addEventListener('click', function () {
     listItem.parentNode.removeChild(listItem)
-  })
+  })*/
 
-  listItem.addEventListener('dragstart', dragFn.start)
-  listItem.addEventListener('dragend', dragFn.stop)
+  //listItem.addEventListener('dragstart', dragFn.start)
+  //listItem.addEventListener('dragend', dragFn.stop)
+
+  list.appendChild(listTemplate)
+  btnRemove.addEventListener('click', remove)
 }
 
 btnAdd.addEventListener('click', add)

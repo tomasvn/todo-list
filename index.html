@@ -23,6 +23,15 @@
         <ul class="jsList todo-app__list"></ul>
       </div>
 
+      <template id="list-template">
+        <li class="todo-app__list--item" draggable="true">
+          <span class="text"></span>
+          <button class="btn-delete jsRemove" title="Delete">
+            <i class="ion ion-ios-close"></i>
+          </button>
+        </li>
+      </template>
+
       <script src="src/js/index.js"></script>
     </body>
 </html>
