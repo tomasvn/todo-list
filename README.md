@@ -15,9 +15,9 @@ Created a todo list app, utilizing DOM manipulations, listening for events, crea
 
 ## Requirements
 
-* [ ] It should have an input for text
-* [ ] It should have a button for adding todos
-* [ ] It should have a button for deleting todos
+* [x] It should have an input for text
+* [x] It should have a button for adding todos
+* [x] It should have a button for deleting todos
 
 ## Outcome
 * Learn about DOM manipulation
