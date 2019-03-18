@@ -11,7 +11,9 @@ Created a todo list app, utilizing DOM manipulations, listening for events, crea
 
 ## Features
 * [ ] Drag and drop, sort todos
-* [ ] Rewrite document.createElement, move to HTML ```<template>``` usage
+* [ ] ~~Rewrite document.createElement, move to HTML ```<template>``` usage~~
+* [ ] Set local storage to store data in browser
+
 
 ## Requirements
 
