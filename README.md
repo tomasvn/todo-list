@@ -9,6 +9,9 @@ Created a todo list app, utilizing DOM manipulations, listening for events, crea
 * [ ] Set up git hooks (husky)
 * [ ] Gulp for static files handling
 
+* [ ] Move from gulp to webpack?
+* [ ] Rework todo list? Move to ES6, utilize class, import export?
+
 ## Features
 * [ ] Drag and drop, sort todos
 * [ ] ~~Rewrite document.createElement, move to HTML ```<template>``` usage~~
