@@ -22,9 +22,9 @@ Created a todo list app, utilizing DOM manipulations, listening for events, crea
 * [x] It should have a button for deleting todos
 
 ### v2.0
-* [x] It should have an input for text
-* [x] It should have a button for adding todos
-* [x] It should have a button for deleting todos
+* [ ] It should have an input for text
+* [ ] It should have a button for adding todos
+* [ ] It should have a button for deleting todos
 * [ ] It should store data in local storage
 * [ ] It should update date
 * [ ] It should mark done TODOs
