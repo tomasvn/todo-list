@@ -4,7 +4,8 @@
   "description": "Todo list v2.0",
   "main": "./src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --open",
+    "build": "webpack --config webpackProd.config.js"
   },
   "author": "Ngoc Tu Nguyen",
   "license": "ISC",
